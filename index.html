@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🧑‍💻 Zeke Student Grade System</title>
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="student.css" />
+  </head>
+  <body>
+    <div>
+      <h2>🧑‍💻ZEKE COLLEGE STUDENT GRADE</h2>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-8 left">
+          <input type="number" id="Business-Policy" class="form-control" placeholder="Business Policy"/>
+          <br />
+          <input type="number" id="Quantitative" class="form-control" placeholder="Quantitative Technique"/>
+          <br />
+          <input type="number" id="Cost-Accounting" class="form-control" placeholder="Cost Accounting"/>
+          <br />
+          <input type="number" id="Intro-Business" class="form-control" placeholder="Introduction to Business"/>
+          <br />
+          <input type="number" id="Management-Theory" class="form-control" placeholder="Management Theory"/>
+          <br />
+          <button type="button" class="btn btn-danger border-black border-0" onclick="getGrade()">
+            Calculate
+          </button>
+        </div>
+
+        <div class="col-12 col-md-4 right">
+          <table>
+            <tr>
+              <td><b>Total Marks</b></td>
+              <td><b>500</b></td>
+            </tr>
+
+            <tr>
+              <td>Obtained Marks</td>
+              <td id="obt"></td>
+            </tr>
+
+            <tr>
+              <td>Percentage</td>
+              <td id="per"></td>
+            </tr>
+
+            <tr>
+              <td>Grade</td>
+              <td id="grade"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="student.js"></script>
+    <script src="bootstrap.bundle.js"></script>
+  </body>
+</html>
